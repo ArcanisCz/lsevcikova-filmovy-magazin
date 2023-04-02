@@ -4,8 +4,7 @@ import { Outlet } from 'react-router-dom'
 
 const Movies = () => {
   return (
-    <main>
-      <h1>Filmy</h1>
+    <main className='movies'>
       <MovieList />
       <Outlet />
     </main>

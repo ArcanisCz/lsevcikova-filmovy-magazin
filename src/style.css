@@ -9,7 +9,30 @@ html {
 }
 
 .container {
-  max-width: 26rem;
   margin-right: auto;
   margin-left: auto;
+}
+.movies {
+  display: flex;
+}
+.movieList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.movieList-wrapper {
+  width: 20%;
+}
+
+.movie-wrapper {
+  width: 48%;
+}
+
+.movie-content {
+  display: flex;
+}
+
+.poster {
+  margin-right: 30px;
 }

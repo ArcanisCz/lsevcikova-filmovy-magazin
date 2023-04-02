@@ -4,13 +4,16 @@ import { Link } from 'react-router-dom'
 
 const MovieList = () => {
   return (
-    <ul>
-      {movies.map(movie => (
-        <li>
-          <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
-        </li>
-      ))}
-    </ul>
+    <div className='movieList-wrapper'>
+      <h1>Movies</h1>
+      <ul className='movieList'>
+        {movies.map(movie => (
+          <li className='movieLink'>
+            <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 

@@ -6,12 +6,14 @@ const Movie = () => {
   const { id } = useParams()
   const movieData = movies.find(movie => movie.id === Number(id))
   return (
-    <div>
+    <div className='movie-wrapper'>
       <h1>{movieData.title}</h1>
-      <div>
+      <div className='movie-content'>
+        <div className='poster'>
           <img src={movieData.poster}></img>
+        </div>
+        <p className='description'>{movieData.storyline}</p>
       </div>
-      <p>{movieData.storyline}</p>
     </div>
   )
 }
