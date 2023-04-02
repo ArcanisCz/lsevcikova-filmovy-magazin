@@ -8,6 +8,10 @@ const Movie = () => {
   return (
     <div>
       <h1>{movieData.title}</h1>
+      <div>
+          <img src={movieData.poster}></img>
+      </div>
+      <p>{movieData.storyline}</p>
     </div>
   )
 }

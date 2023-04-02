@@ -7,7 +7,7 @@ const MovieList = () => {
     <ul>
       {movies.map(movie => (
         <li>
-          <Link to={`/filmy/${movie.id}`}>{movie.title}</Link>
+          <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
         </li>
       ))}
     </ul>

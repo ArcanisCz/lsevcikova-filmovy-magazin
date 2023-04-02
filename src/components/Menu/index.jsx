@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 const Menu = () => {
   return (
     <nav>
-      <Link to='/'>Domů</Link>
+      <Link to='/'>Home</Link>
       <span> | </span>
-      <Link to='/recenze'>Recenze</Link>
+      <Link to='/reviews'>Reviews</Link>
       <span> | </span>
-      <Link to='/clanky'>Články</Link>
+      <Link to='/articles'>Articles</Link>
       <span> | </span>
-      <Link to='/filmy'>Filmy</Link>
+      <Link to='/movies'>Movies</Link>
     </nav>
   )
 }
