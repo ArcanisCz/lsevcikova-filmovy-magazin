@@ -7,12 +7,17 @@ const Movie = () => {
   const movieData = movies.find(movie => movie.id === Number(id))
   return (
     <div className='movie-wrapper'>
-      <h1>{movieData.title}</h1>
+      <h2>{movieData.title}</h2>
       <div className='movie-content'>
         <div className='poster'>
           <img src={movieData.poster}></img>
         </div>
-        <p className='description'>{movieData.storyline}</p>
+        <div className='description'>
+          <div>
+            {movieData.director}, {movieData.year}, {movieData.rating}
+          </div>
+          <p>{movieData.storyline}</p>
+        </div>
       </div>
     </div>
   )
